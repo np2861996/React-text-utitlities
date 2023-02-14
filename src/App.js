@@ -49,6 +49,7 @@ function App() {
       <Alert alert={alert}/>
       <Routes>
           <Route index element={<div className="container"><TextForm showAlert={showAlert} heading="Enter The Text" mode={mode} /></div>} />
+          <Route path="/home" element={<div className="container"><TextForm showAlert={showAlert} heading="Enter The Text" mode={mode} /></div>} />
           <Route path="/about" element={<div className="container" ><About mode={mode} /></div>} />
       </Routes>
     </BrowserRouter>
